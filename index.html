@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Page</title>
+</head>
+<body>
+
+  <h1 id="title">Customer Feedback Survey</h1>
+  <p id="description">We value your input! Please take a moment to fill out this short survey.</p>
+
+  <form id="survey-form">
+
+    <label id="name-label" for="name">Name:</label>
+    <input id="name" type="text" placeholder="Enter your full name" required />
+
+    <label id="email-label" for="email">Email:</label>
+    <input id="email" type="email" placeholder="Enter a valid email address" required />
+
+    <label id="number-label" for="number">Age:</label>
+    <input id="number" type="number" min="18" max="100" placeholder="Enter your age" required />
+
+    <label for="dropdown">How did you hear about us?</label>
+    <select id="dropdown">
+      <option value="social">Social Media</option>
+      <option value="friend">Friend or Family</option>
+    </select>
+
+    <p>Would you recommend us?</p>
+    <label><input type="radio" name="recommend" value="yes" /> Yes</label>
+    <label><input type="radio" name="recommend" value="no" /> No</label>
+
+    <p>What services do you use? (Select all that apply)</p>
+    <label><input type="checkbox" value="design" /> Design</label>
+    <label><input type="checkbox" value="development" /> Development</label>
+    <label><input type="checkbox" value="marketing" /> Marketing</label>
+
+    <p>Additional comments:</p>
+    <textarea placeholder="Share your thoughts..."></textarea>
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
